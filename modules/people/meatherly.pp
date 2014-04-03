@@ -15,4 +15,6 @@ class people::meatherly {
   #   source  => 'jbarnette/dotfiles',
   #   require => File[$my]
   # }
+
+  mysql::db { 'mydb': }
 }
