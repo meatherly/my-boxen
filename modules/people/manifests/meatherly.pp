@@ -1,9 +1,12 @@
 class people::meatherly {
-  include emacs   # requires emacs module in Puppetfile
-  include sparrow # requires sparrow module in Puppetfile
   include mysql
+  include postgresql
+  include imagemagick
+  include phantomjs
+  include redis
 
-  $home     = "/Users/${::boxen_user}"
+
+#  $home     = "/Users/${::boxen_user}"
   # $my       = "${home}/my"
   # $dotfiles = "${my}/dotfiles"
   
@@ -16,5 +19,5 @@ class people::meatherly {
   #   require => File[$my]
   # }
 
-  mysql::db { 'mydb': }
+  #mysql::db { 'mydb': }
 }
