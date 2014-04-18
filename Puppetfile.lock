@@ -104,6 +104,11 @@ GITHUBTARBALL
     sysctl (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-tmux
+  specs:
+    tmux (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.1)
@@ -148,5 +153,6 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.1)
+  tmux (= 1.0.2)
   xquartz (= 1.1.1)
 

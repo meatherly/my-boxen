@@ -4,20 +4,12 @@ class people::meatherly {
   include imagemagick
   include phantomjs
   include redis
+  include tmux
+  require git::config
 
-
-#  $home     = "/Users/${::boxen_user}"
-  # $my       = "${home}/my"
-  # $dotfiles = "${my}/dotfiles"
-  
-  # file { $my:
-  #   ensure  => directory
-  # }
-
-  # repository { $dotfiles:
-  #   source  => 'jbarnette/dotfiles',
-  #   require => File[$my]
-  # }
-
-  #mysql::db { 'mydb': }
+  File <| title == "${git::config::configdir}/gitignore" |> {
+    source => undef,
+    content => template("${boxen::config::home}/repo/modules/projects/templates/shared/gitignore.erb"),
+    require => File["${git::config::configdir}"]
+  }
 }

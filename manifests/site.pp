@@ -22,7 +22,7 @@ Exec {
     "HOMEBREW_CACHE=${homebrew::config::cachedir}",
     "HOME=/Users/${::boxen_user}"
   ]
-# }
+ }
 
 File {
   group => 'staff',

@@ -61,6 +61,7 @@ github "postgresql",  "3.0.0"
 github "sysctl",      "1.0.1"
 github "imagemagick", "1.2.0"
 github "redis",       "3.0.2"
+github "tmux",        "1.0.2"
 
 
 # Optional/custom modules. There are tons available at
