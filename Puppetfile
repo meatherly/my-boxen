@@ -65,7 +65,7 @@ github "tmux",        "1.0.2"
 github "vagrant",     "3.0.7"
 github "virtualbox",  "1.0.11"
 github "hipchat",     "1.1.1"
-github "sublime_text_3", "1.0.2"
+github "sublime_text_3", "1.0.2", :repo => "jozefizso/puppet-sublime_text_3"
 github "chrome",      "1.1.2"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
