@@ -1,21 +1,7 @@
 class people::meatherly {
-  include mysql
-  include postgresql
-  include imagemagick
-  include phantomjs
-  include redis
-  include tmux
-  include chrome
-  include hipchat
-  include virtualbox
-  include vagrant
-
-  include sublime_text_3
-  include sublime_text_3::package_control
-
-  sublime_text_3::package { 'Emmet':
-    source => 'sergeche/emmet-sublime'
-  }
+  include ohmyzsh
+  include alfred
+  include projects::metova_dev_setup
 #  require git::config
 
 #  File <| title == "${git::config::configdir}/gitignore" |> {
